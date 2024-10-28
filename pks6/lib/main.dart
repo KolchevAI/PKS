@@ -1,151 +1,99 @@
-// main.dart
-
 import 'package:flutter/material.dart';
-import 'package:shop/pages/home_page.dart';
-import 'package:shop/pages/favorites_page.dart';
-import 'package:shop/pages/profile_page.dart';
-import 'package:shop/pages/cart_page.dart';
-import 'package:shop/module/data.dart';
+import 'package:cskashop/pages/home_page.dart';
+import 'package:cskashop/pages/favorites_page.dart';
+import 'package:cskashop/pages/cart_page.dart';
+import 'package:cskashop/pages/profile_page.dart';
+import 'package:cskashop/logic/favorites_provider.dart';
+import 'package:provider/provider.dart';
+import 'package:cskashop/logic/cart_provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => FavoritesProvider()),
+        ChangeNotifierProvider(create: (ctx) => CartProvider()),
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  List<FormItem> favoriteItems = [];
-  List<CartItem> cartItems = [];
-
-  void toggleFavorite(FormItem item) {
-    setState(() {
-      if (favoriteItems.contains(item)) {
-        favoriteItems.remove(item);
-      } else {
-        favoriteItems.add(item);
-      }
-    });
-  }
-
-  void addToCart(FormItem item) {
-    setState(() {
-      CartItem? existingItem = cartItems.firstWhere(
-        (cartItem) => cartItem.item == item,
-        orElse: () => CartItem(item: item, quantity: 0),
-      );
-
-      if (existingItem.quantity == 0) {
-        cartItems.add(CartItem(item: item));
-      } else {
-        existingItem.quantity++;
-      }
-    });
-  }
-
-  void removeFromCart(CartItem cartItem) {
-    setState(() {
-      cartItems.remove(cartItem);
-    });
-  }
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'CSKA Shop',
       debugShowCheckedModeBanner: false,
-      title: 'CSKA Uniform',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Color(0xFFf2f2f2),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 255, 255, 255)),
+        useMaterial3: true,
       ),
-      home: MyHomePage(
-        favoriteItems: favoriteItems,
-        cartItems: cartItems,
-        onFavoriteToggle: toggleFavorite,
-        onAddToCart: addToCart,
-        onRemoveFromCart: removeFromCart,
-      ),
+      home: const MainScreen(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  final List<FormItem> favoriteItems;
-  final List<CartItem> cartItems;
-  final Function(FormItem) onFavoriteToggle;
-  final Function(FormItem) onAddToCart;
-  final Function(CartItem) onRemoveFromCart;
-
-  MyHomePage({
-    required this.favoriteItems,
-    required this.cartItems,
-    required this.onFavoriteToggle,
-    required this.onAddToCart,
-    required this.onRemoveFromCart,
-  });
+class MainScreen extends StatefulWidget {
+  const MainScreen({super.key});
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  State<MainScreen> createState() => _MainScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
+  
+  final List<Widget> _pages = [
+    const HomePage(),
+    FavoritesPage(),
+    CartPage(),
+    ProfilePage(),
+  ];
 
-  List<Widget> _pages = [];
-
-  @override
-  void initState() {
-    super.initState();
-    _pages = [
-      HomePage(
-        favoriteItems: widget.favoriteItems,
-        onFavoriteToggle: widget.onFavoriteToggle,
-        onAddToCart: widget.onAddToCart,
-      ),
-      FavoritesPage(favoriteItems: widget.favoriteItems),
-      CartPage(
-        cartItems: widget.cartItems,
-        onRemoveFromCart: widget.onRemoveFromCart,
-      ),
-      ProfilePage(),
-    ];
-  }
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
+  final List<String> _titles = [
+    'Главная',
+    'Избранное',
+    'Корзина',
+    'Профиль',
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(_titles[_selectedIndex]),
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+      ),
       body: _pages[_selectedIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: _selectedIndex,
+        onDestinationSelected: (int index) {
+          setState(() {
+            _selectedIndex = index;
+          });
+        },
+        destinations: const [
+          NavigationDestination(
             icon: Icon(Icons.home),
             label: 'Главная',
           ),
-          BottomNavigationBarItem(
+          NavigationDestination(
             icon: Icon(Icons.favorite),
             label: 'Избранное',
           ),
-          BottomNavigationBarItem(
+          NavigationDestination(
             icon: Icon(Icons.shopping_cart),
             label: 'Корзина',
           ),
-          BottomNavigationBarItem(
+          NavigationDestination(
             icon: Icon(Icons.person),
             label: 'Профиль',
           ),
         ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blueAccent,
-        unselectedItemColor: Colors.grey[400],
-        onTap: _onItemTapped,
       ),
     );
   }
