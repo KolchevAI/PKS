@@ -1,16 +1,6 @@
-# pks7
+Колчев Алексей. ЭФБО-04-22
 
-A new Flutter project.
+7 практика
 
-## Getting Started
+https://github.com/user-attachments/assets/89f2478d-ab9f-4f8a-88a3-3a352027a458
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
