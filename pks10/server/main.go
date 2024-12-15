@@ -65,14 +65,7 @@ var db *sql.DB
 
 func init() {
 	var err error
-	connStr := "host=aws-0-eu-central-1.pooler.supabase.com " +
-		"user=postgres.ytqxnxhkvqszwsdkrwgg " +
-		"password=AlexColchev50607 " +
-		"dbname=postgres " +
-		"port=5432 " +
-		"sslmode=require"
-
-	db, err = sql.Open("postgres", connStr)
+	
 	if err != nil {
 		log.Fatal("Ошибка подключения к базе данных:", err)
 	}
