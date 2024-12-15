@@ -6,7 +6,9 @@
 
 Добавил тестовый товар:
 
-![photo_3_2024-12-14_17-15-11](https://github.com/user-attachments/assets/8779c264-b4d0-47bf-967d-ca07aa6b270b)
+![image](https://github.com/user-attachments/assets/ad3ef689-e794-470c-924a-24d6ec0e0cc9)
+
+
 ![photo_5_2024-12-14_17-15-11](https://github.com/user-attachments/assets/6a7a2750-4f5f-456e-a352-3e6edb60ceb8)
 ![1](https://github.com/user-attachments/assets/c3775134-a4ae-41d8-a5c5-8f05e5646866)
 
@@ -20,5 +22,7 @@
 Удаляем тестовый товар:
 
 ![photo_1_2024-12-14_17-15-11](https://github.com/user-attachments/assets/b0dbb045-25f4-4f98-94de-cdc77c5656a5)
-![photo_2_2024-12-14_17-15-11](https://github.com/user-attachments/assets/8c98bb09-3c15-4cca-944e-df6aed76201c)
+
+![image](https://github.com/user-attachments/assets/6a00a20e-de8e-4529-87ea-c95442a923eb)
+
 ![3](https://github.com/user-attachments/assets/b9ca219d-8d1f-4296-aacd-659442b9c65e)
