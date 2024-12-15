@@ -11,9 +11,9 @@
 
 ![image](https://github.com/user-attachments/assets/11c695ad-5606-4024-9c29-b1e9840c7283)
 
-Пример запроса:
+![image](https://github.com/user-attachments/assets/57738cd0-b894-457f-8b49-0addec47506a)
 
-![image](https://github.com/user-attachments/assets/fd0aeff8-9127-4d4d-8fbe-87964d399036)
+
 
 
 Изменений в дизайне нет.
