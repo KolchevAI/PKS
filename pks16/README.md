@@ -1,27 +1,20 @@
 # Колчев Алексей ЭФБО-04-22
 
-## 12 практика
+## 16 практика
 
-### Реализован поиск
+### Приложение отправлено на модерацию в RuStore и на данный момент статус такой:
 
-![image](https://github.com/user-attachments/assets/272ca74f-e2b2-43b4-b4b9-728d80161d5b)
+![image](https://github.com/user-attachments/assets/be8ac857-f1f0-47c7-b1a6-bb3f29d53b12)
 
-![image](https://github.com/user-attachments/assets/56a14a44-3733-4b9f-96f8-bfe404d817ae)
+### Была добавлена иконка приложения
 
-### Фильтры
+![лого приложения-512x512](https://github.com/user-attachments/assets/e70d3fd0-3ce7-49de-8c54-82ce6b994574)
 
-![image](https://github.com/user-attachments/assets/ed50354a-aba9-469c-9bd8-be4dbbc0eeed)
+### Название приложения cskashop, тип приложения: неигоровое, категория приложения: развлечения, возрастная категория 0+, краткое описание приложения: Приложение, созданное в ходе обучения. Полное описание: Это приложение создано в ходе обучения Flutter-разработки. Оно не является коммерческим и выкладывается с целью получения опыта.
 
-![image](https://github.com/user-attachments/assets/1abbb70a-01e0-403f-aa73-9f9888454e8c)
+### Добавлены следующие скриншоты
+![photo_2024-12-17_11-49-28](https://github.com/user-attachments/assets/c19e6720-594f-4faa-9f0a-2c2629096945)
+![photo_2024-12-17_11-49-33](https://github.com/user-attachments/assets/31b1f26b-6c6b-4403-86c6-66ab18b22d48)
+![photo_2024-12-17_11-49-00](https://github.com/user-attachments/assets/5c5d8dde-1c03-4323-8219-dc3655e36aec)
+![photo_2024-12-17_11-49-24](https://github.com/user-attachments/assets/4ab7c043-3007-4942-af6f-a9bc92a12b20)
 
-### Сортировка
-
-![image](https://github.com/user-attachments/assets/142dd45a-bba3-471c-b3c1-070b4b59998e)
-
-### Результат сортировки от А до Я
-
-![image](https://github.com/user-attachments/assets/6bdfa15a-2f5d-4929-a040-d4e3ec3752e5)
-
-### Результат сортировки от меньшей цены к большей
-
-![image](https://github.com/user-attachments/assets/e8e75221-bff1-46a0-96a5-d4a2d19abad5)
