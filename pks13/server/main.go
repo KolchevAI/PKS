@@ -65,7 +65,7 @@ var db *sql.DB
 
 func init() {
 	var err error
-	//данные подключения к базе данных скрыты в целях безопасности
+	connStr := "postgres://postgres.jxpjsxmfxeqhxrjcfasc:pks13-supabase-password@aws-0-eu-central-1.pooler.supabase.com:5432/postgres"
 
 	db, err = sql.Open("postgres", connStr)
 	if err != nil {
