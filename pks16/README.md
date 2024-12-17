@@ -4,18 +4,15 @@
 
 ### Приложение отправлено на модерацию в RuStore и на данный момент статус такой:
 
-![изображение](https://github.com/user-attachments/assets/c4fb5fe9-6e7c-43d4-9256-d149f620c952)
+![Добавление 4](https://github.com/user-attachments/assets/f6874c6c-b610-4125-97cd-96642d2a193c)
 
 
-### Была добавлена иконка приложения
 
-![лого приложения-512x512](https://github.com/user-attachments/assets/e70d3fd0-3ce7-49de-8c54-82ce6b994574)
+![Добавление 3](https://github.com/user-attachments/assets/883b59e0-0ed6-40be-89e4-cf4c876b590d)
+![Добавление 1](https://github.com/user-attachments/assets/70229804-0bc3-4b69-b61a-15692002d0e1)
+![Добавление 2](https://github.com/user-attachments/assets/8edcf737-db1d-41df-ba3f-ffb42dde1478)
 
-### Название приложения cskashop, тип приложения: неигоровое, категория приложения: развлечения, возрастная категория 0+, краткое описание приложения: Приложение, созданное в ходе обучения. Полное описание: Это приложение создано в ходе обучения Flutter-разработки. Оно не является коммерческим и выкладывается с целью получения опыта.
 
-### Добавлены следующие скриншоты
-![photo_2024-12-17_11-49-28](https://github.com/user-attachments/assets/c19e6720-594f-4faa-9f0a-2c2629096945)
-![photo_2024-12-17_11-49-33](https://github.com/user-attachments/assets/31b1f26b-6c6b-4403-86c6-66ab18b22d48)
-![photo_2024-12-17_11-49-00](https://github.com/user-attachments/assets/5c5d8dde-1c03-4323-8219-dc3655e36aec)
-![photo_2024-12-17_11-49-24](https://github.com/user-attachments/assets/4ab7c043-3007-4942-af6f-a9bc92a12b20)
+
+
 
