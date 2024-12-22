@@ -7,7 +7,7 @@
 
 ![image](https://github.com/user-attachments/assets/8acff7c1-2581-472d-a837-1991f8ce845a)
 
-### При добавлении товаров появляется кнопка оформления заказа
+### При добавлении товаров кнопка оформления заказа отображается
 
 ![image](https://github.com/user-attachments/assets/a8103825-0600-4536-84da-0ad855ffc66d)
 
